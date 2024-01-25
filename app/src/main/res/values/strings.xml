@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">assignment2</string>
+    <string name="title">Game title</string>
+    <string name="playClassic">Play rock, paper, scissors</string>
+    <string name="playLizardSpock">Play rock, paper, scissors, lizard, spock</string>
+    <string name="instructions">Image of instructions -Spock  smashes scissors, scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons spock, spock vapourises rock, rock crushes scissors, scissors decapitates lizard, lizard eats paper, paper disproves spock</string>
+    <string name="readyBtn">Ready!</string>
+    <string name="choose">Choose your weapon!</string>
+    <string name="rock">Rock</string>
+    <string name="paper">Paper</string>
+    <string name="scissors">Scissors</string>
+    <string name="lizard">Lizard</string>
+    <string name="spock">Spock</string>
+    <string name="computerChoice">Computer Choice:</string>
+    <string name="compImg">Image of robot face</string>
+    <string name="results">Results from the game:</string>
+    <string name="homeBtn">New Game</string>
+</resources>
