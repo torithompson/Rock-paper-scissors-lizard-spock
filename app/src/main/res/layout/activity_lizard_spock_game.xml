@@ -33,7 +33,7 @@
         app:layout_constraintHorizontal_bias="0.067"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.156" />
+        app:layout_constraintVertical_bias="0.147" />
 
     <ImageView
         android:id="@+id/spockTitle"
@@ -52,7 +52,7 @@
         android:id="@+id/divider"
         android:layout_width="409dp"
         android:layout_height="1dp"
-        android:layout_marginBottom="304dp"
+        android:layout_marginBottom="272dp"
         android:background="?android:attr/listDivider"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -103,7 +103,7 @@
         android:id="@+id/lizard"
         android:layout_width="101dp"
         android:layout_height="92dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="32dp"
         android:contentDescription="@string/lizard"
         app:layout_constraintBottom_toTopOf="@+id/divider"
         app:layout_constraintEnd_toStartOf="@+id/spock"
@@ -117,7 +117,7 @@
         android:id="@+id/spock"
         android:layout_width="101dp"
         android:layout_height="93dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="32dp"
         android:contentDescription="@string/spock"
         app:layout_constraintBottom_toTopOf="@+id/divider"
         app:layout_constraintEnd_toEndOf="parent"
@@ -143,15 +143,15 @@
 
     <ImageView
         android:id="@+id/compChoiceImg"
-        android:layout_width="196dp"
-        android:layout_height="139dp"
+        android:layout_width="165dp"
+        android:layout_height="103dp"
         android:contentDescription="@string/compImg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.781"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/divider"
-        app:layout_constraintVertical_bias="0.347"
+        app:layout_constraintVertical_bias="0.323"
         app:srcCompat="@drawable/computer" />
 
     <TextView

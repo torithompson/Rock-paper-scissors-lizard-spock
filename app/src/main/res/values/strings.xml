@@ -15,4 +15,7 @@
     <string name="compImg">Image of robot face</string>
     <string name="results">Results from the game:</string>
     <string name="homeBtn">New Game</string>
+    <string name="ResultsDB">Results from Database</string>
+    <string name="ResultsSP">Results from Shared Preferences</string>
+    <string name="string_resultsdb">\@string/ResultsDB</string>
 </resources>

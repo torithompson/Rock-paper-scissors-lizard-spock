@@ -26,7 +26,8 @@
         android:fontFamily="casual"
         android:text="@string/results"
         android:textAlignment="center"
-        android:textSize="20sp"
+        android:textSize="22sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/wins"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,30 +36,91 @@
 
     <TextView
         android:id="@+id/wins"
-        android:layout_width="342dp"
-        android:layout_height="267dp"
+        android:layout_width="366dp"
+        android:layout_height="171dp"
         android:fontFamily="casual"
         android:textAlignment="center"
         android:textSize="24sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/resultsTitle"
-        app:layout_constraintVertical_bias="0.389" />
+        app:layout_constraintVertical_bias="0.191" />
 
     <Button
         android:id="@+id/homeBtn"
         android:layout_width="139dp"
         android:layout_height="80dp"
+        android:layout_marginBottom="16dp"
         android:fontFamily="casual"
         android:text="@string/homeBtn"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.867"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/wins"
-        app:layout_constraintVertical_bias="0.298" />
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/topScores"
+        android:layout_width="340dp"
+        android:layout_height="182dp"
+        android:layout_marginBottom="56dp"
+        android:fontFamily="casual"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/homeBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wins"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="270dp"
+        android:layout_height="37dp"
+        android:fontFamily="casual"
+        android:text="Top 5 Players:"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/topScores"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wins"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/resultsFrom"
+        android:layout_width="343dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="19dp"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/homeBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topScores" />
+
+    <Button
+        android:id="@+id/deleteAll"
+        android:layout_width="116dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="28dp"
+        android:fontFamily="casual"
+        android:text="Delete All"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/homeBtn"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultsFrom" />
 </androidx.constraintlayout.widget.ConstraintLayout>

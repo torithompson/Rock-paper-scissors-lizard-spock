@@ -4,36 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="100dp">
 
     <ImageView
         android:id="@+id/mainTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="37dp"
         android:contentDescription="@string/title"
+        app:layout_constraintBottom_toTopOf="@+id/classicText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.59"
         app:srcCompat="@drawable/title" />
 
     <ImageView
         android:id="@+id/classicGame"
-        android:layout_width="390dp"
-        android:layout_height="295dp"
+        android:layout_width="300dp"
+        android:layout_height="190dp"
+        android:background="@drawable/image_border"
         android:contentDescription="@string/playClassic"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:scaleType="fitCenter"
+        android:padding="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/lizardSpockText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintHorizontal_bias="0.528"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mainTitle"
-        app:layout_constraintVertical_bias="0.079"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.781"
         app:srcCompat="@drawable/rockpaperscissors" />
 
     <TextView
         android:id="@+id/classicText"
         android:layout_width="271dp"
         android:layout_height="25dp"
+        android:layout_marginBottom="10dp"
         android:contentDescription="@string/playClassic"
         android:text="@string/playClassic"
         android:textAlignment="center"
@@ -41,35 +50,40 @@
         android:textColorLink="#673AB7"
         android:textIsSelectable="false"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/classicGame"
+        app:layout_constraintBottom_toTopOf="@+id/classicGame"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/classicGame"
-        app:layout_constraintVertical_bias="0.04" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/lizardSpockGame"
-        android:layout_width="395dp"
-        android:layout_height="257dp"
-        android:layout_marginBottom="4dp"
+        android:layout_width="306dp"
+        android:layout_height="212dp"
         android:contentDescription="@string/playLizardSpock"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="16dp"
+        android:background="@drawable/image_border"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.966"
         app:srcCompat="@drawable/lizardspock" />
+
 
     <TextView
         android:id="@+id/lizardSpockText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="23dp"
         android:text="@string/playLizardSpock"
         android:textAllCaps="true"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/lizardSpockGame"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/classicGame"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.951" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
